@@ -1,18 +1,120 @@
-## Getting Started
+## MVP
+At the end of your project, these are the basics criteria that your code should meet.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Main.java
+Contains public class Main with a ``main`` method that:
 
-## Folder Structure
+Contains an ArrayList of Cupcakes called cupcakeMenu
 
-The workspace contains two folders by default, where:
+Contains a Cupcake object
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Contains a RedVelvet object
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Contains a Chocolate object
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Contains a scanner object to accept user inputs
 
-## Dependency Management
+Accepts user input 3 times for the 3 different prices of the cupcakes
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Adds the 3 cupcakes to the cupcakeMenu
+
+Contains an Arraylist of Drinks called drinkMenu
+
+Contains a Drink object
+
+Contains a Soda object
+
+Contains a Milk object
+
+Accepts user input 3 times for the 3 different prices of the drinks
+
+Adds the 3 drinks to the drinkMenu
+
+Call the Order constructor with the cupcakeMenu and drinkMenu as parameters
+
+Contains class Cupcake that:
+
+Contains a public function called GetPrice that returns double
+
+Contains a public function called setPrice that has a parameter of double and returns void
+
+Contains a public function called type that returns void
+
+Contains class RedVelvet that extends Cupcake with the appropriate functionality
+
+Contains class Chocolate that extends Cupcake with the appropriate functionality
+
+Contains class Drink that:
+
+Contains a public function called GetPrice that returns double
+
+Contains a public function called setPrice that has a parameter of double and returns void
+
+Contains a public function called type that returns void
+
+Contains class Soda that extends Drink with the appropriate functionality
+
+Contains class Milk that extends Drink with the appropriate functionality
+
+# Order.java
+Contains public class Order that:
+
+Contains public Order constructor with cupcakeMenu and drinkMenu as parameters
+
+Contains a scanner object
+
+Accepts a user input using the scanner object
+
+New ArrayList called order
+
+If statement used to check if the user watchs to order
+
+Add date to the order
+
+Add time to the order
+
+Use a for loop to print the cupcake menu
+
+Use a for loop to print the drink menu
+
+Use a while loop to run until the user is done ordering
+
+Use an If statement that takes the user input and adds the corresponding item to their order
+
+Use a for loop starting at 2 to loop threw the items added to the arrayList
+
+Use an If statement to check if the item in the arraylist is equal to an item on either menu, if so take the price for that item and add it to the subtotal
+
+Call the CreateFile constructor
+
+Call the WriteToOrder constructor with order as the parameter
+
+Contains class CreateFile that:
+
+Contains public CreateFile constructor with no parameters
+
+Contains a try block
+
+Contains a File object
+
+Contains an if statement that checks if the file does not exist
+
+Make the file
+
+Contains an else
+
+Contains a catch block
+
+Contains class WriteToFile that:
+
+Contains public WriteToFile constructor with order as the parameter
+
+Contains a try block
+
+Contains a FileWriter object
+
+Contains a PrintWriter object
+
+Runs println(order) with the PrintWriter object
+
+Contains a catch block
